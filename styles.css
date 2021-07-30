@@ -1,0 +1,44 @@
+/*
+  Name: Arjun Jagnani
+  Date: 28 July, 2021
+
+  This is the stylesheet linked to the index.html page for the random activity generating webpage.
+  This stylesheet describes the styling to be followed by all the elements on the webpage, and
+  works on the design element of the webpage.
+*/
+
+body {
+    background-color: lemonchiffon;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-decoration: underline;
+    color: darkolivegreen;
+    font-size: 60px;
+  }
+  
+  footer {
+    font-size: 15px;
+  }
+  
+  #activity-here, h1, footer {
+    text-align: center;
+  }
+  
+  button, select, body {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button {
+    background-color: darkseagreen;
+  }
+  
+  li {
+    padding: 10px;
+  }

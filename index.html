@@ -1,0 +1,104 @@
+<!--
+  Name: Arjun Jagnani
+  Date: 28 July, 2021
+
+  This is the index.html file that is the root of the random activity generator. This file defines
+  a webpage that helps the user in curing boredom by generating a random activity for the user to
+  do, and gives the user to specify things like number of participants, activity type, or even
+  activity costs, and returns an activity accordingly.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Image has been obtained from:https://yourfavoritecrafts.com/things-to-draw-when-bored/ -->
+    <link rel="icon" href="bored.ico">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>
+      Rock Bottom of Boredom
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Are You Bored?
+      </h1>
+    </header>
+    <main>
+      <section id="intro">
+        <p>
+          Something tells me that you have hit the absolute rock bottom of boredomness, and can't
+          go down any further. This means that you are looking for something interesting to do, or
+          are conflicted between multplie things to do.
+        </p>
+        <p>
+          Well, you have come to the perfect place. Here, I can help you in choosing a fun activity
+          to do, and bear in mind, this WILL be something that will help you in life, so only
+          go ahead if you yourself want to do something, other than just passing time.
+        </p>
+        <p>
+          There are various options for you to choose from, to obtian an activity from me. Click
+          on any one of these buttons, to go ahead with the action specified by the button:
+        </p>
+        <ul>
+          <li>
+            <button id="random">
+              Let me generate an absolute random activity
+            </button>
+          </li>
+          <li>
+            <button id="type">
+              Obtain a random activity from a chosen type of activities
+            </button>
+            <select id="activity-type">
+              <option value="education">Educational Activity</option>
+              <option value="recreational" selected>Recreational Activity</option>
+              <option value="social">Social Activity</option>
+              <option value="relaxation">Relaxing Activity</option>
+              <option value="cooking">Culinary Activity</option>
+              <option value="busywork">Time Consuming Activity</option>
+            </select>
+          </li>
+          <li>
+            <button id="participants">
+              Obtain a random activity from an available number of participants
+            </button>
+            <select id="participant-number">
+              <option value="1" selected>1 Participant</option>
+              <option value="2">2 Participants</option>
+              <option value="3">3 Participants</option>
+              <option value="4">4 Participants</option>
+              <option value="5">5 Participants</option>
+              <option value="8">8 Participants</option>
+            </select>
+          </li>
+          <li>
+            <button id="price">Obtain a random activity from a particular price range</button>
+            <select id="amount">
+              <option value="0" selected>Free!</option>
+              <option value="0.1">10 Dollar</option>
+              <option value="0.2">20 Dollars</option>
+              <option value="0.3">30 Dollars</option>
+              <option value="0.4">40 Dollars</option>
+              <option value="0.5">50 Dollars</option>
+              <option value="0.6">60 Dollars</option>
+              <option value="0.8">80 Dollars</option>
+            </select>
+          </li>
+        </ul>
+      </section>
+      <section id="activity-here">
+      </section>
+    </main>
+    <footer>
+      <p>
+        Data from the <a href="https://www.boredapi.com/">Bored API</a>.
+      </p>
+    </footer>
+  </body>
+</html>
